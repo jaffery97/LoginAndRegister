@@ -1,0 +1,39 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<body>
+<div class="main">
+  <h1>Login</h1>
+  <p style="text-align:center;color:red;"><% if (messages.error) { %>
+    <%= messages.error %>
+  <% } %> </p>
+<form class="" action="/login" method="post">
+
+<label for="Email">Email</label><hr>
+
+<input type="text" name="email" placeholder="Email" id="Email" required><br><br>
+<label for="Password">Password</label><hr>
+<input type="password" name="password" placeholder="Password" id="password" required>
+<span id="text1" onclick="show()">Show</span>
+<br>
+<button type="submit" name="submit">Sign In</button>
+</form>
+<center>
+  <a href="#" class="link">Forgot password?</a>
+<p>
+Need an account?
+<a href="/register" class="link">Register Now</a>
+<p>
+<center>
+</div>
+
+<footer>
+Node.js Project by Jafory
+</footer>
+
+
+<script type="text/javascript" src="s_h.js"></script>
+
+
+</body>

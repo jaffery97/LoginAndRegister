@@ -1,0 +1,22 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<h3>Hi <span style="color:green"><%= name %></span></h3>
+
+<form action="/logout?_method=DELETE" method="post">
+  <button type="submit" class="nav_user"><i class="fa fa-power-off" style="font-size:24px"></i></button>
+</form>
+
+
+<div class="main_box">
+<h1>Welcome <span style="color:green"><%= name %>!</span></h1>
+
+<img src="img/happy.png" width="300px">
+
+</div>
+
+<footer>
+Node.js Project by Jafory
+</footer>
